@@ -18,9 +18,12 @@
     "moduleResolution": "node",
     "noEmit": false,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noImplicitAny": true,
     "outDir": "./dist/",
-    "types": ["reflect-metadata", "jest", "node"],
+    "types": ["reflect-metadata", "node", "jest"],
     "paths": {
       "@/*": ["src/*"],
     },
@@ -41,5 +44,6 @@
   "include": [
     "src/**/*.tsx",
     "src/**/*.ts"
-  ]
+  ],
+  "exclude": ["__tests__"]
 }

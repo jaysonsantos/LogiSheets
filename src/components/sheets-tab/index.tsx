@@ -12,6 +12,7 @@ export type SheetsTabprops = Record<string, unknown>
 export const SheetsTabComponent: FC<SheetsTabprops> = () => {
     const BACKEND_SERVICE = useInjection<Backend>(TYPES.Backend)
     const SHEET_SERVICE = useInjection<SheetService>(TYPES.Sheet)
+    console.log(SHEET_SERVICE)
     const getSheets = () =>
         SHEET_SERVICE.getSheets().map(s => s.name)
     const [sheets, setSheets] = useState(getSheets())

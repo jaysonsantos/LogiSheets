@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": "..",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "jsx": "react-jsx",
+        "lib": ["DOM", "ES2017"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noImplicitOverride": true,
+        "noUnusedParameters": true,
+        "target": "es6",
+        "types": ["jest", "node"],
+        "paths": {
+            "@/*": ["src/*"],
+        }
+    },
+    "include": [
+        "__tests__/*.ts",
+        "__tests__/*.tsx",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+    ]
+}
