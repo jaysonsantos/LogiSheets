@@ -14,5 +14,7 @@
     "singleQuote": true,
     "tabWidth": 4,
     "trailingComma": "es5",
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
     "useTabs": false
 }
